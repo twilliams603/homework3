@@ -13,9 +13,9 @@ def main_menu()
 	workflow = ["create", "search", "quit"]
 	user_input = []
 	while not workflow.include? user_input do
-		puts "\nEnter \"create\" to create a new entry.
-			    Enter \"search\" to search for an entry.
-			    Enter \"quit\" to quit the application.\n\n"
+		puts "\nEnter \"create\" to create a new entry."
+		puts "Enter \"search\" to search for an entry."
+		puts "Enter \"quit\" to quit the application.\n\n"
 	    print ">"
 		user_input = gets.chomp
 		if not workflow.include? user_input
